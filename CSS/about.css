@@ -1,0 +1,548 @@
+
+/* Start About */
+.about {
+    padding: 50px 0;
+    margin: auto;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+}
+
+.about .container .about-left {
+    flex: 1;
+}
+
+.about .container .about-left h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+    color: var(--main-text-colot);
+}
+
+.about .container .about-left p {
+    font-size: var(--font-size-paragragh);
+    line-height: 2;
+    color: var(--text-color);
+}
+
+.about .container .about-right {
+    flex: 1;
+}
+
+.about .container .about-right img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+@media(max-width:991px) {
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about .container .about-left {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .about .container .about-left h1 {
+        font-size: 4.5rem;
+    }
+
+    .about .container .about-left p {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width:767px) {
+    .about .container .about-right img {
+        width: auto;
+    }
+
+    .about .container .about-left h1 {
+        font-size: 4rem;
+    }
+
+    .about .container .about-left p {
+        font-size: 1.3rem;
+    }
+}
+
+/* End About */
+
+/* Satrt Serve */
+
+.serve {
+    padding: 50px 0;
+    margin: auto;
+}
+
+.serve .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.serve .container .serve-left {
+    flex: 1;
+    position: relative;
+}
+
+.serve .container .serve-left>img {
+    width: 70%;
+    border-radius: 15px;
+}
+
+/* ##################### */
+
+.serve .container .serve-left .order-level {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--price-bakcground-second-color);
+    display: flex;
+    align-items: center;
+}
+
+.serve .container .serve-left .order-level i {
+    color: var(--second-color);
+    font-size: 3rem;
+    padding-right: 10px;
+}
+
+.serve .container .serve-left .order-level span {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.serve .container .serve-left .assessment {
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+    background-color: var(--price-bakcground-second-color);
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.serve .container .serve-left .assessment .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.serve .container .serve-left .assessment .box>img {
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.serve .container .serve-left .assessment .box .box-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.serve .container .serve-left .assessment .box .box-info>span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.serve .container .serve-left .assessment .box .box-info .star i {
+    color: var(--second-color);
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.serve .container .serve-left .assessment>p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+/* ##################### */
+
+
+.serve .container .serve-right {
+    flex: 1;
+}
+
+.serve .container .serve-right h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 800;
+    color: var(--main-text-colot);
+    line-height: 2;
+}
+
+.serve .container .serve-right p {
+    font-size: var(--font-size-paragragh);
+    color: var(--text-color);
+    line-height: 2;
+}
+
+.serve .container .serve-right .video {
+    margin-top: 20px;
+}
+
+.serve .container .serve-right .video .icon-color {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    border-radius: 20px;
+    width: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.serve .container .serve-right .video .icon-color::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    background: transparent;
+    border: 10px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: translateY(-50%);
+    color: var(--link-colors);
+}
+
+@media(max-width:991px) {
+    .serve .container {
+        flex-direction: column;
+        margin: 40px auto;
+    }
+
+    .serve .container .serve-left {
+        margin-bottom: 50px;
+    }
+
+    .serve .container .serve-left>img {
+        display: block;
+        margin: auto;
+    }
+
+    .serve .container .serve-right {
+        text-align: center;
+    }
+}
+
+/* End Serve */
+
+/* Start Mission */
+
+.mission {
+    padding: 50px 0;
+    margin: auto;
+}
+
+.mission .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.mission .container .mission-left {
+    flex: 1.5;
+    padding: 40px;
+}
+
+.mission .container .mission-left>h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 800;
+    color: var(--main-text-colot);
+}
+
+.mission .container .mission-left>p {
+    color: var(--text-color);
+    line-height: 2;
+    font-size: var(--font-size-paragragh);
+    margin: 30px auto;
+}
+
+.mission .container .mission-left>button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.mission .container .mission-right {
+    margin-top: 40px;
+    flex: 1;
+    width: 100%;
+    padding: 40px;
+}
+
+.mission .container .mission-right>h3 {
+    color: var(--main-text-colot);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.mission .container .mission-right>h3 span {
+    color: var(--link-colors);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.mission .container .mission-right>p {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    line-height: 2;
+    margin: 20px auto;
+}
+
+
+@media (max-width:991px) {
+    .mission .container {
+        flex-direction: column;
+    }
+
+    .mission .container {
+        text-align: center;
+    }
+}
+
+/* End Mission */
+
+/* Start Service */
+
+.service {
+    padding: 50px 0;
+    margin: auto;
+}
+
+.service .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    align-items: center;
+    margin: auto;
+    gap: 60px;
+}
+
+.service .container .service-left h2 {
+    font-size: var(--font-size-h2);
+    color: var(--main-text-colot);
+    line-height: 1.7;
+    font-weight: 800;
+}
+
+.service .container .service-left img {
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.service .container .service-right {
+    margin-left: 40px;
+
+}
+
+.service .container .service-right .box {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.service .container .service-right .box:not(.box:last-child) {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.service .container .service-right .box .number {
+    color: var(--link-colors);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin: 20px 0px;
+}
+
+.service .container .service-right .box .text {
+    color: var(--main-text-colot);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* End Service */
+
+/* Start Customers */
+.customers {
+    padding: 50px 0;
+    margin: auto;
+}
+
+.customers .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customers .container .customers-left {
+    flex: 1;
+}
+
+.customers .container .customers-left img {
+    width: 100%;
+}
+
+.customers .container .customers-right {
+    flex: 1;
+    padding: 40px;
+}
+
+.customers .container .customers-right h2 {
+    font-size: var(--font-size-h2);
+    color: var(--main-text-colot);
+    font-weight: 800;
+    line-height: 1.7;
+}
+
+.customers .container .customers-right p {
+    font-size: var(--font-size-paragragh);
+    color: var(--text-color);
+    line-height: 1.8;
+    padding: 30px 0px;
+}
+
+.customers .container .customers-right .info .person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.customers .container .customers-right .info .person>img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.customers .container .customers-right .info .person .person-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.customers .container .customers-right .info .person .name {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--main-text-colot);
+    margin-bottom: 20px;
+}
+
+.customers .container .customers-right .info .person .favorite {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text-color);
+
+}
+
+.customers .container .customers-right .info .star {
+    display: flex;
+}
+
+.customers .container .customers-right .info .star>i {
+    color: var(--second-color);
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+.customers .container .customers-right .info .star span {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* End Customers */
+
+/* Start App Download */
+
+.app-download {
+    padding: 50px 0;
+    margin: auto;
+}
+
+.app-download .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-download .container .app-download-left {
+    flex: 1.5;
+}
+
+.app-download .container .app-download-left h2 {
+    font-size: var(--font-size-h2);
+    color: var(--main-text-colot);
+    font-weight: 800;
+    line-height: 1.7;
+}
+
+.app-download .container .app-download-left p {
+    font-size: var(--font-size-paragragh);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.7;
+    padding: 20px 20px 20px 0px;
+}
+
+.app-download .container .app-download-left h3 {
+    color: var(--main-text-colot);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.app-download .container .app-download-left .box {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.app-download .container .app-download-left .box>img {
+    width: 30%;
+    cursor: pointer;
+}
+
+
+.app-download .container .app-download-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.app-download .container .app-download-right img {
+    width: 50%;
+}
+
+@media(max-width:991px) {
+    .app-download .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-download .container .app-download-right img {
+        display: none;
+    }
+
+    .app-download .container .app-download-left .box {
+        display: block;
+    }
+    .app-download .container .app-download-left .box>img {
+        margin: auto;
+    }
+}
+
+/* End App Download */
